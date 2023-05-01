@@ -23,16 +23,15 @@ public class PrimeNumber {
         
         Scanner myNumber = new Scanner(System.in);
 
-        System.out.println("Enter a number: ");
+        System.out.print("Enter a number: ");
 
         int num = myNumber.nextInt();
 
-        System.out.println("Is a Prime Number? ");
         if (isPrime(num)) {
-            System.out.println("true");
+            System.out.println(num + " is a prime number");
         }
         else {
-            System.out.println("false");
+            System.out.println(num + " is not a prime number");
         }
     }
 }
