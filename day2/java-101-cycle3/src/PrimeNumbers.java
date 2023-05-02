@@ -29,6 +29,28 @@ public class PrimeNumbers {
             System.out.println(ctr1);
         }
 
+        // Prime Numbers
+
+        long startTime = System.nanoTime();
+
+        System.out.println(isPrimeNumber(11));
+
+        long endTime = System.nanoTime();
+        System.out.println("Duration: " + (endTime - startTime));
+
+    }
+
+    public static boolean isPrimeNumber(int num) {
+        if (num <= 1) {
+            return false;
+        }
+
+        for (int i =2; i <= num /2; i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
     }
 
 }
