@@ -2,6 +2,27 @@ public class App {
     public static void main(String[] args) {
         System.out.println("Hello World");
 
+        // How to name a variable
+            // start with a letter or an underscore
+                //example:
+                int quantity = 9;
+                int _quantity = 9;
+                int _quantity2121213121212_____ = 9;
+                // int 9quantity = 9; // INVALID
+                // int **?/quantity = 9; // INVALID
+                System.out.println(_quantity2121213121212_____);
+
+            // use camelCase always
+                // example:
+                double myGrade = 89.9;
+                String myNickname = "Josh";
+                System.out.println(myGrade);
+                System.out.println(myNickname);
+
+            // Except for static variables (will discuss soon)
+                // example:
+                // double MY_GRADE = 89.9;
+
         //Variables
             // it holds a value,
             // it stores in RAM
@@ -21,6 +42,14 @@ public class App {
         System.out.println(newBalance);
 
         //decimal: double and float
+        allAboutDecimals(age);
+
+        //Strings
+        allAboutStrings();
+
+    }
+
+    public static void allAboutDecimals(int age) {
         double price = 4.45;
         double newPrice = price + age;
         System.out.println(newPrice);
@@ -28,7 +57,7 @@ public class App {
         float discount = 9.56f;
         double subtotal = newPrice + discount;
         System.out.println(subtotal);
-        
+
         double num1 = 1;
         float num2 = 4000.54f;
         double result = num1 + num2;
@@ -36,7 +65,27 @@ public class App {
 
         int resultMaxValue = Integer.MAX_VALUE + Integer.MAX_VALUE;
         System.out.println(resultMaxValue);
-
-
     }
+
+    public static void allAboutStrings() {
+        int number1 = 1;
+        char number1char = '1';
+        String number1string = "1"; // array of characters ['1', '', '', ....]
+        // size depends on the number of letter ( joshua(6 letters) ---> 6 x 16bytes (size))
+
+        String myName = "Josh"; //use this
+        char[] myNameArr = new char[]{'J', 'O', 'S', 'H'}; //over this
+
+        System.out.println(myName);
+        System.out.println(myName.toLowerCase());
+        System.out.println(myName.toUpperCase());
+        String completeName = myName + " Zarate";
+        System.out.println(completeName);
+        System.out.println(myName.substring(2, 3));
+
+        boolean isEqualName = myName.equals("josh");
+        boolean isEqualIgnoreCase = myName.equalsIgnoreCase("josh");
+        System.out.println(isEqualName + " " + isEqualIgnoreCase);
+    }
+
 }
