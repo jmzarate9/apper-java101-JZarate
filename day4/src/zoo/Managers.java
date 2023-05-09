@@ -2,9 +2,9 @@ package zoo;
 
 public class Managers {
     //--- instance variable ---
-    public String name;
-    public int age;
-    public String title;
+    private String name;
+    private int age;
+    private String title;
 
     //--- default constructor ---
     public Managers() {};

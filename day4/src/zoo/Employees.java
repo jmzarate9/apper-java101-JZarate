@@ -2,7 +2,7 @@ package zoo;
 
 public class Employees {
     //--- instance variable ---
-    public String name;
+    private String name;
     protected double salary;
 
     //--- default constructor ---

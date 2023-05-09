@@ -2,9 +2,10 @@ package zoo;
 
 public class Animals {
     //--- instance variable ---
-    public String name;
-    public String type;
-    public String food;
+        // all instance variable should be in private for best practice
+    private String name;
+    private String type;
+    private String food;
 
     //--- default constructor ---
     public Animals() {};

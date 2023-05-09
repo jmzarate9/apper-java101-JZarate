@@ -2,7 +2,7 @@ package zoo;
 
 public class Visitors {
     //--- instance variable ---
-    public String name;
+    private String name;
     private int age;
 
     //--- default constructor ---
