@@ -3,7 +3,7 @@ package zoo;
 public class Employees {
     //--- instance variable ---
     public String name;
-    private double salary;
+    protected double salary;
 
     //--- default constructor ---
     public Employees(){
@@ -21,7 +21,7 @@ public class Employees {
     }
 
     //--- Getter ---
-    public double getSalary() {
+    protected double getSalary() {
         return salary;
     }
 
