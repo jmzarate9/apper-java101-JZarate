@@ -6,7 +6,9 @@ public class Visitors {
     private int age;
 
     //--- default constructor ---
-    public Visitors(){};
+    public Visitors(){
+        age = 28;
+    };
 
     //--- parametrized constructor ---
     public Visitors(String name, int age) {

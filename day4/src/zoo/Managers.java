@@ -20,14 +20,14 @@ public class Managers {
         Employees employees = new Employees();
 
         // setting a salary for employees
-        employees.setSalary(1_000);
+        //employees.setSalary(100_000);
         // getting and printing the salary
         System.out.println("Employee salary: " + employees.getSalary());
     }
 
     void displayAge() {
         Visitors visitors = new Visitors();
-        visitors.setAge(25);
+        //visitors.setAge(25);
         System.out.println("visitors age: " + visitors.getAge());
     }
 

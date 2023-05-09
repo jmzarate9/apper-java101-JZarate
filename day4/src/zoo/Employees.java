@@ -6,7 +6,9 @@ public class Employees {
     private double salary;
 
     //--- default constructor ---
-    public Employees(){};
+    public Employees(){
+        salary = 1_000;
+    };
 
     //--- parametrized constructor ---
     public Employees(String name, double salary) {
