@@ -60,20 +60,20 @@ class LoadSharingImplementation implements LoadSharing {
         System.out.println("------------------------------------------------------------------");
         if (number.isEmpty()) {
             System.out.println("Number is empty. Enter a 11-digit number (0900-000-0000).");
-            System.exit(0);
+            return;
 
         } else if (number.length() != 11) {
             System.out.println("Invalid Number! Enter a 11-digit number (0900-000-0000).");
-            System.exit(0);
+           return;
 
         } else if (users.containsKey(number)) {
             System.out.println("Phone number already exist.");
-            System.exit(0);
+            return;
         }
 
         if (name.isEmpty()) {
             System.out.println("Invalid name. Name must not be empty.");
-            System.exit(0);
+            return;
         }
 
         users.put(number, new User(name, 100.00));
@@ -91,19 +91,19 @@ class LoadSharingImplementation implements LoadSharing {
 
         if(sender == recipient) {
             System.out.println("Sender and recipient cannot be the same.");
-            System.exit(0);
+            return;
 
         } else if (!users.containsKey(senderNumber)) {
             System.out.println("Sender number " + "(" + senderNumber +")" + " not found.");
-            System.exit(0);
+            return;
 
         } else if (!users.containsKey(recipientNumber)) {
             System.out.println("Recipient number " + "(" + recipientNumber +")" + " not found.");
-            System.exit(0);
+            return;
 
         } else if (sender.getBalance() < loadAmount) {
             System.out.println("Insufficient balance in the sender's account.");
-            System.exit(0);
+            return;
         }
 
         System.out.println("------------------------------------------------------------------");
@@ -119,7 +119,7 @@ class LoadSharingImplementation implements LoadSharing {
 
     // Method to display all users and their balances
     public void displayAll() {
-        System.out.println("---- Current balances: ----");
+        System.out.println("---- Users and Current balances: ----");
         for (Map.Entry<String, User> entry : users.entrySet()) {
             String number = entry.getKey();
             User user = entry.getValue();
