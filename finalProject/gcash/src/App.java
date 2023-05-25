@@ -8,8 +8,7 @@ public class App {
         boolean appRunning = true;
 
         while(appRunning) {
-            System.out.println("-----------------------------------------");
-            System.out.println("--- LOAD SHARING APP ---");
+            System.out.println("------------ LOAD SHARING APP ------------");
             System.out.println("1. Register an account");
             System.out.println("2. Share a Load");
             System.out.println("3. Display all users and balances");
