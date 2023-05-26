@@ -3,13 +3,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-// Interface for load sharing transactions
-interface LoadSharing {
-    void registerUser(String name, String number);
-    void shareLoad(String senderNumber, String recipientNumber, double amount);
-    void displayAll();
-}
-
 // User class representing registered users
 class User {
     //---instance variable---
@@ -130,7 +123,7 @@ class LoadSharingImplementation implements LoadSharing {
         }
     }
 
-    // Helper method to get user input from the console
+    // Method to get user input from the console
     public String getInput(String prompt) {
         System.out.print(prompt + ": ");
         return scanner.nextLine();
